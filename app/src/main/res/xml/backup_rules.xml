@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Règles de sauvegarde.
+     NOTE : simai_secure_settings.xml contient la clé API chiffrée (EncryptedSharedPreferences)
+     et n'est pas conseillé de le sauvegarder : exclude-le. -->
+<full-backup-content>
+    <exclude domain="sharedprefs" path="simai_secure_settings.xml" />
+    <include domain="sharedprefs" path="simai_settings.xml" />
+    <include domain="database" path="sim_ai.db" />
+</full-backup-content>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Règles de sauvegarde à distance et d'export d'appareil vers appareil :
+     exclure le fichier chiffré des paramètres OpenAI. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedprefs" path="simai_secure_settings.xml" />
+        <include domain="sharedprefs" path="simai_settings.xml" />
+        <include domain="database" path="sim_ai.db" />
+    </cloud-backup>
+    <device-to-device>
+        <exclude domain="sharedprefs" path="simai_secure_settings.xml" />
+        <include domain="sharedprefs" path="simai_settings.xml" />
+        <include domain="database" path="sim_ai.db" />
+    </device-to-device>
+    <encryption-required />
+</data-extraction-rules>

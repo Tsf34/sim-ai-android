@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.SimAi" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/ic_launcher_background</item>
+        <item name="android:statusBarColor">@color/ic_launcher_background</item>
+    </style>
+
+    <style name="Theme.SimAi" parent="Base.SimAi" />
+</resources>
